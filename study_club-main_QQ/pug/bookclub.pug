@@ -1,0 +1,117 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title 讀書會｜書箱視家
+  link(rel='stylesheet' href='public/css/styles.css')
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+//- header start ------------------------------------------------------
+body 
+    header 
+        .container
+            .row.flex-space-between
+                .logo  
+                    a(href='index.html')
+                        img(src='public/images/logo.svg' alt='')
+                a.icon-menu(href="#") 
+                    img(src="public/images/icon_Menu.svg", alt="")
+                nav
+                    ul 
+                        li.phone_sign 
+                            a(href="sign_up.html") 註冊
+                        li.phone_sign 
+                            a(href="sign_in.html") 登入
+                        li
+                            a(href="library.html") 圖書館
+                        li
+                            a(href="bookclub.html") 讀書會
+                        li
+                            a(href="study.html") 我的書房
+                        
+                .sign
+                    a.sign_in(href="sign_in.html") 登入
+                    a.sign_up(href="sign_up.html") 註冊
+    //- header end --------------------------------------------------------
+    .banner 
+        picture
+            source(media='(min-width:768px)' srcset='public/images/bookclub_pc.png')
+            img.img_banner(src='public/images/bookclub_phone.png' alt='')
+        a(href='#') 我要揪團
+    //- search start -----------------------------------------------------------------
+
+    .wrap
+        .search
+            input#search.search-bar(type='text' name='search' placeholder='搜尋讀書會')
+            button.search-btn
+                i.fa.fa-search
+    //- section start -----------------------------------------------------------------
+    section 
+        .container 
+            h3 加入讀書會
+            .row.text-center 
+                a.col-sm-12.col-md-6.col-lg-3.group(href="#")
+                    img(src="public/images/book_back.png", alt="")
+                    h4 逆向工程
+                    p 主揪：丹丹
+                    p.morebtn 更多資訊
+                a.col-sm-12.col-md-6.col-lg-3.group(href="#")
+                    img(src="public/images/book_think.png", alt="")
+                    h4 火箭科學家
+                    p 主揪：Marty
+                    p.morebtn 更多資訊
+                a.col-sm-12.col-md-6.col-lg-3.group(href="#")
+                    img(src="public/images/book_talk.png", alt="")
+                    h4 溝通的方法
+                    p 主揪：Gimmy
+                    p.morebtn 更多資訊
+                a.col-sm-12.col-md-6.col-lg-3.group(href="#")
+                    img(src="public/images/book_habit.png", alt="")
+                    h4 原子習慣
+                    p 主揪：彥成
+                    p.morebtn 更多資訊
+    //- section end -----------------------------------------------------------------
+    footer 
+        .container
+            .row 
+                //- img(src="public/images/logo.svg", alt="")
+                dl.col-lg-4.text-center
+                    dt 關於我們
+                    dd
+                        a(href='#') 平台介紹
+                    dd
+                        a(href='#') 服務條款
+                    dd
+                        a(href='#') 商業合作
+                    dd
+                        a(href='#') 意見回饋
+                    dd
+                        a(href='#') 聯絡我們
+                dl.col-lg-4.text-center
+                    dt 使用須知
+                    dd
+                        a(href='#') 如何開始
+                    dd
+                        a(href='#') 進行方式
+                    dd
+                        a(href='#') 書聚指南
+                dl.col-lg-4.text-center
+                    dt 常見問題
+                    dd
+                        a(href='#') 注意事項
+                    dd
+                        a(href='#') FAQ問答
+        .down
+            .container
+                .row 
+                    p.copyright copyright2022 bookclub 
+                    .icon 
+                        a(href="#") 
+                            img(src="public/images/icon_line.svg", alt="")
+                        a(href="#") 
+                            img(src="public/images/icon_fb.svg", alt="")
+                        a(href="#") 
+                            img(src="public/images/icon_ig.svg", alt="")
+                        a(href="#") 
+                            img(src="public/images/icon_gmail.svg", alt="")
